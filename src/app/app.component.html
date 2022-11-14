@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+Count : {{notificationCount}}
+
+<NotificationManager (CountChanged)="UpdateNotificationCount($event)" [Count]="notificationCount"> </NotificationManager>
+<ibutton [iBtnCount]= "notificationCount" > </ibutton>
